@@ -548,9 +548,7 @@
   /* Signal beam */
   .sim-signal{
     display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 6px;
-    background: #0c0e11; width: 60px; height: 120px; /* Bubble space */
-    border-top: 1px solid var(--line-dark); border-bottom: 1px solid var(--line-dark);
-    z-index: 1; margin: 0 -10px; position:relative;
+    z-index: 1; padding: 10px 0;
   }
   .sig-arrow{
     width: 10px; height: 10px;
@@ -618,11 +616,12 @@
   .upsell-cta-strip a{ flex-shrink: 0; }
 
   @media(max-width: 700px){
-    .simulator{ grid-template-columns: 1fr; gap: 16px; }
-    .sim-signal{ flex-direction: row; transform: rotate(90deg); }
+    .simulator{ grid-template-columns: 1fr; gap: 10px; }
+    .sim-signal{ flex-direction: row; transform: rotate(90deg); margin:10px 0; }
     .sig-arrow{ transform: rotate(-45deg); }
     .upsell-cta-strip{ flex-direction: column; text-align: center; padding: 26px 20px; }
     .upsell-cta-strip a{ width: 100%; justify-content: center; }
+    .try-me-badge{ font-size: .75rem; padding: 5px 12px; top: -12px; white-space:nowrap; }
   }
   .sec-light .comp-table tr:hover td{background:rgba(245,184,20,.06);}
 
